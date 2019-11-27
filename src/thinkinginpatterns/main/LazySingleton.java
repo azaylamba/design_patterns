@@ -5,7 +5,7 @@ package thinkinginpatterns.main;
  * Again making this final to prevent use of inheritance and clone.
  *
  */
-public class LazySingleton {
+final public class LazySingleton {
     //Initialize with null
     private static LazySingleton instance = null;
     private int id;
