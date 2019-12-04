@@ -1,9 +1,6 @@
 package thinkinginpatterns.test;
 
-import thinkinginpatterns.main.GameElementFactory;
-import thinkinginpatterns.main.GameEnvironment;
-import thinkinginpatterns.main.KillAndDismember;
-import thinkinginpatterns.main.KittiesAndPuzzles;
+import thinkinginpatterns.main.*;
 
 /**
  * A test class to test abstract factory pattern.
@@ -17,6 +14,9 @@ public class GameEnvironmentTest {
         GameEnvironment g2 = new GameEnvironment(kd);
         g1.play();
         g2.play();
+        GameElementFactory gf = new GnomsAndFairies();
+        GameEnvironment g3 = new GameEnvironment(gf);
+        g3.play();
     }
 
 }
