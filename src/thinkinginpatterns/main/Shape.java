@@ -10,6 +10,8 @@ public abstract class Shape {
             return new Circle();
         } else if("Square".equals(type)) {
             return new Square();
+        } else if ("Triangle".equals(type)) {
+            return new Triangle();
         } else {
             throw new BadShapeCreation(type);
         }
