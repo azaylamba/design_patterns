@@ -5,4 +5,5 @@ public interface Inhabitant {
     void interact(Dwarf d);
     void interact(Elf e);
     void interact(Troll t);
+    Weapon getWeapon();
 }

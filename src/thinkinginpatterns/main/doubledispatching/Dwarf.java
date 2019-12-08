@@ -1,5 +1,7 @@
 package thinkinginpatterns.main.doubledispatching;
 
+import java.util.Random;
+
 public class Dwarf implements Inhabitant {
 
     @Override
@@ -20,6 +22,15 @@ public class Dwarf implements Inhabitant {
     @Override
     public void interact(Troll t) {
         System.out.println("Dwarf interacting with Troll");
+    }
+
+    @Override
+    public Weapon getWeapon() {
+        if(new Random().nextBoolean()) {
+            return new Jargon();
+        } else {
+            return new Play();
+        }
     }
 
     public String toString() {
