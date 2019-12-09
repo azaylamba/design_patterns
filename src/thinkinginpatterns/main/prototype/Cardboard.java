@@ -7,7 +7,7 @@ public class Cardboard extends Trash {
     }
     @Override
     public double getValue() {
-        return 0;
+        return val;
     }
 
     public static void setValue(double newVal) {
