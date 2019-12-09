@@ -23,4 +23,16 @@ public abstract class Trash {
         }
         System.out.println("Total value = " + val);
     }
+    static Trash factory(Messanger messanger) {
+        switch (messanger.type) {
+            default:
+            case 0:
+                return new Aluminium(messanger.data);
+            case 1:
+                return new Paper(messanger.data);
+            case 2:
+                return new Glass(messanger.data);
+            //new types can be added below
+        }
+    }
 }

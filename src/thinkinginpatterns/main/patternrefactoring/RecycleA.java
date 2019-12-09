@@ -26,6 +26,15 @@ public class RecycleA {
         }
     }
 
+    /**
+     * Added parameter just for sake of creating new constructor which uses different
+     */
+    public RecycleA(String newWay) {
+        for(int i=0; i<30; i++) {
+            bin.add(Trash.factory(new Messanger(((int) (Math.random() * 100)), Math.random() * 100)));
+        }
+    }
+
     public void test() {
         Iterator sorter = bin.iterator();
         //sort the trash
